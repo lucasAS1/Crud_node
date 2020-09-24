@@ -1,0 +1,22 @@
+{
+  "name": "desafio_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "desafio_node"
+  },
+  "keywords": [
+    "CRUD"
+  ],
+  "author": "Lucas Alves da Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4"
+  }
+}
