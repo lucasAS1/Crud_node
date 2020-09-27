@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Css/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Css/padroesdeestilo.css" rel="stylesheet">
+    <link href="DataTables/datatables.css" rel="stylesheet">
+    <title>Desafio node</title>
+</head>
+<body>
+
+    <!--Barra de navegação-->
+    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse"
+            data-target="#menuRetratil"
+            aria-controls="menuRetratil"
+            aria-expanded="false"
+            aria-label="Expandir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuRetratil">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cadastro.html">Cadastrar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Conteudo da página-->
+    <div class="container-fluid corpo">
+        <div class="pt-5 pt-5 m-5">
+            <form>
+                <table class="table table-dark table-hover table-responsive-lg table-striped" id="tblView">
+                    <thead class="text-lg-center">
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Departamento</th>
+                        <th>Deletar cadastro</th>
+                    </thead>
+                    <tbody class="text-lg-center">
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <!--Scripts JS-->
+    <script src="JS/jquery/dist/jquery.min.js"></script>
+    <script src="JS/bootstrap/bootstrap.min.js"></script>
+    <script src="DataTables/datatables.min.js"></script>
+    <script src="JS/metodos.js"></script>
+    <script src="JS/metodosindice.js"></script>
+
+
+    <!--Rodapé da página-->
+    <footer class="rodape">
+        <div class="d-flex justify-content-center align-middle">
+            <p class="lead">Desenvolvido por Lucas Alves da Silva</p>
+        </div>
+    </footer>
+</body>
+</html>
