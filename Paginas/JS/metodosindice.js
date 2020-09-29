@@ -1,4 +1,5 @@
 $(document).ready(async()=>{
+
     const response=await fetch('/view_cadastro');
     const myJson=await response.json();
     myJson.forEach(row => {
@@ -11,6 +12,12 @@ $(document).ready(async()=>{
                                             <td><a class="nav-link" href="#" onClick=deletarCadastro(${row.id_func})>Deletar cadastro</a></td>
                                             </tr>`);
     });
+    $('#tblView').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'excel', 'print'
+        ]
+    } );
 });
 
 async function deletarCadastro(id){
@@ -25,3 +32,4 @@ async function deletarCadastro(id){
     });
     window.location.href="/";
 }
+
