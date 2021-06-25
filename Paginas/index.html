@@ -62,7 +62,24 @@
     <script src="JS/metodos.js"></script>
     <script src="JS/metodosindice.js"></script>
 
-
+    <!--Scripts do chatbot-->
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+    <script>
+        (function () {
+                window.onload = function () {
+                    var blipClient = new BlipChat();
+                    blipClient.withAppKey('dHJlaW5vb25ib2FyZGluZ2JsaXA6MzVkMDY1ZWYtZDc0MC00YjVjLTk2OWItMzU3ZmRiZjNiY2M0')
+                .withEventHandler(BlipChat.LOAD_EVENT, function () {
+              blipClient.sendMessage({
+                        "type": "text/plain",
+                        "content": "Olá"
+                });
+                    })
+                    .build();
+                }
+            })();
+        </script>
+                                
     <!--Rodapé da página-->
     <footer class="rodape">
         <div class="d-flex justify-content-center align-middle">

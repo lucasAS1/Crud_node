@@ -14,3 +14,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+  
+.dt-button buttons-excel buttons-html5{
+	 background-color:black !important;
+ }
